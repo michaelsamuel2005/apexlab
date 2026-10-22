@@ -1,0 +1,13 @@
+[project]
+name = "apexlab"
+version = "0.1.0"
+description = "Physics-based, reduced-order and data-driven models of F1 car performance from public telemetry"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "statsmodels", "matplotlib", "jax", "numpyro", "SALib", "requests"]
+[project.optional-dependencies]
+dev = ["pytest"]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+where = ["src"]
